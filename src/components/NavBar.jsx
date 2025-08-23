@@ -21,7 +21,8 @@ const NavBar = () => {
     <div className="navbar bg-base-300 shadow-sm">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost text-2xl font-bold">
-          <img src="./public/logo.webp" className="w-14 h-10"></img>DevSpark
+          <img src="/logo.webp" alt="Devspark-logo" className="w-14 h-10"></img>
+          DevSpark
         </Link>
       </div>
       {user && (

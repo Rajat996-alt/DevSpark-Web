@@ -74,8 +74,12 @@ const Request = () => {
 
       <ul className="space-y-5">
         {requests.map((request) => {
+          const user = request.fromUserId;
+          if (!user) {
+            return null;
+          }
           const { _id, firstName, lastName, photoUrl, age, gender, about } =
-            request.fromUserId;
+            user;
 
           return (
             <li
